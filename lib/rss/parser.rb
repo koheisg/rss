@@ -518,7 +518,7 @@ module RSS
               end
             end
           end
-          raise MissingAttributeError.new(tag_name, a_name)
+          # raise MissingAttributeError.new(tag_name, a_name)
         end
 
         attributes[a_name] = val

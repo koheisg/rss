@@ -1119,7 +1119,7 @@ EOC
       _attrs.each do |a_name, required, alias_name|
         value = instance_variable_get("@#{alias_name || a_name}")
         if required and value.nil?
-          raise MissingAttributeError.new(tag_name, a_name)
+          # raise MissingAttributeError.new(tag_name, a_name)
         end
         __send__("#{alias_name || a_name}=", value)
       end
